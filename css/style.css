@@ -1,0 +1,860 @@
+/* css reset - makes the layout looking good in all browsers */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block; }
+body {
+	line-height: 1; 
+	font:12px/20px Arial;
+	background:#e0f3ff url(bg.png) repeat scroll 0 0;
+	}
+ol, ul {
+	list-style: none; }
+
+/* Main Styles */	
+	
+#wrapper{
+	width: 90%;
+    height: 100px;
+	margin: 0px 80px;
+    position: fixed;
+}
+
+#nav {
+	width: 70%;
+	margin:auto;
+    float: left;
+    position:relative;
+    padding: 20px 0px;
+}
+
+ul#navigation {
+	margin:0px auto;
+	position:relative;
+	float:left;
+	border-left:1px solid #c4dbe7;
+	border-right:1px solid #c4dbe7;
+}
+
+ul#navigation li {
+	display:inline;
+	font-size:12px;
+	font-weight:bold;
+	margin:0;
+	padding:0;
+	float:left;
+	position:relative;
+	border-top:1px solid #c4dbe7;
+	border-bottom:2px solid #c4dbe7;
+}
+
+ul#navigation li a {
+	padding:10px 25px;
+	color:#616161;
+	text-shadow:1px 1px 0px #fff;
+	text-decoration:none;
+	display:inline-block;
+	border-right:1px solid #fff;
+	border-left:1px solid #C2C2C2;
+	border-top:1px solid #fff;
+	background: #f5f5f5;
+	
+	-webkit-transition:color 0.2s linear, background 0.2s linear;	
+	-moz-transition:color 0.2s linear, background 0.2s linear;	
+	-o-transition:color 0.2s linear, background 0.2s linear;	
+	transition:color 0.2s linear, background 0.2s linear;	
+}
+
+ul#navigation li a:hover {
+	background:#f8f8f8;
+	color:#282828;
+}
+
+ul#navigation li:hover > a {
+	background:#fff;
+}
+
+/* Drop-Down Navigation */
+ul#navigation li:hover > ul
+{
+	visibility:visible;
+	opacity:1;
+}
+
+ul#navigation ul, ul#navigation ul li ul {
+	list-style: none;
+    margin: 0;
+    padding: 0;    
+	visibility:hidden;
+    position: absolute;
+    z-index: 99999;
+	width:180px;
+	background:#f8f8f8;
+	box-shadow:1px 1px 3px #ccc;
+	opacity:0;
+	-webkit-transition:opacity 0.2s linear, visibility 0.2s linear; 
+	-moz-transition:opacity 0.2s linear, visibility 0.2s linear; 
+	-o-transition:opacity 0.2s linear, visibility 0.2s linear; 
+	transition:opacity 0.2s linear, visibility 0.2s linear; 	
+}
+
+ul#navigation ul {
+    top: 43px;
+    left: 1px;
+}
+
+ul#navigation ul li ul {
+    top: 0;
+    left: 181px;
+}
+
+ul#navigation ul li {
+	clear:both;
+	width:100%;
+	border:0 none;
+	border-bottom:1px solid #c9c9c9;
+}
+
+ul#navigation ul li a {
+	background:none;
+	padding:7px 15px;
+	color:#616161;
+	text-shadow:1px 1px 0px #fff;
+	text-decoration:none;
+	display:inline-block;
+	border:0 none;
+	float:left;
+	clear:both;
+	width:150px;
+}
+
+ul#navigation li a.first {
+	border-left: 0 none;
+}
+
+ul#navigation li a.last {
+	border-right: 0 none;
+}
+/* login form PAGE OF CSS*/
+.log_first_div {
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/dadet-green.jpg), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.form_box {
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background-color: #fff;
+    padding: 5px;
+}
+
+.button_box {
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff6124;
+    border-radius: 30px;
+    overflow: auto;
+}
+
+.toggle_btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    float: left;
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.social_icons {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.social_icons img {
+    width: 30px;
+    margin: 0 12px;
+    box-shadow: 0 0 20px 0 #7f7f7f;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.input_group {
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.input_field {
+    width: 100%;
+    padding: 10px 0px;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.submit_btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+.checkbox {
+    margin: 30px 10px 30px 0px;
+}
+
+span {
+    color: #777;
+    font-size: 12px;
+    bottom: 65px;
+    position: absolute;
+}
+
+#login {
+    left: 50px;
+}
+
+#register {
+    left: 450px;
+}
+
+/* Index PAGE OF CSS*/
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.first_div {
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    overflow: auto;
+    position: fixed;
+}
+
+.logo {
+    width: 30%;
+    padding: 10px;
+    float: left;
+}
+
+.logos {
+    width: 100%;
+    margin: auto;
+}
+
+.logo_img {
+    width: 70px;
+    margin: 0px 20px;
+}
+
+.menubar {
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    float: left;
+}
+
+.menu_bar {
+    width: 100%;
+    text-align: center;
+    margin: 15px 10px;
+    padding: 10px;
+}
+
+.menu {
+    padding: 0px 15px;
+    margin: auto;
+    display: inline-block;
+}
+
+.second_div {
+    width: 90%;
+    margin: auto;
+}
+
+.sec_img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.third_div {
+    width: 100%;
+    margin: auto;
+    overflow: auto;
+}
+
+.div_h1 {
+    width: 100%;
+    margin: auto
+}
+
+.h1_third_div {
+    width: 100%;
+    margin: 20px auto;
+    font-size: 25px;
+    text-align: center;
+}
+
+.third_img {
+    width: 25%;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+    float: left;
+}
+
+.third_img_div {
+    width: 70%;
+    height: 40%;
+    margin: auto;
+    text-align: center;
+    margin: auto;
+}
+
+.third_h3 {
+    width: 70%;
+    margin: auto;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.third_p {
+    width: 75%;
+    margin: auto;
+    font-size: 14px;
+    padding: 10px;
+    text-align: left;
+}
+
+.third_text {
+    width: 75%;
+    padding: 15px;
+    float: left;
+}
+
+.third_div_text {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px 0px;
+    margin: 0px;
+}
+
+.div_ul {
+    width: 50%;
+    margin: 0;
+}
+
+.outter_div {
+    width: 100%;
+}
+
+.in_div {
+    font-size: 16px;
+}
+
+.third_div_text1 {
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 0px;
+    margin: 0px;
+}
+
+.four_div {
+    width: 90%;
+    margin: 30px auto;
+    overflow: auto;
+}
+
+.four_div_tit {
+    width: 100%;
+    margin: 15px auto;
+}
+
+.four_txt1 {
+    text-align: left;
+    font-size: 30px;
+    padding: 0px 20px;
+}
+
+.four_div1 {
+    width: 33.33%;
+    margin: auto;
+    padding: 0px 15px;
+    float: left;
+}
+
+.four_h3 {
+    background-color: brown;
+    padding: 10px;
+    color: white;
+    margin: 0px;
+    font-size: 20px;
+}
+
+.four_img {
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    display: block;
+}
+
+.four_txt {
+    width: 100%;
+    padding: 10px;
+    color: black;
+    font-size: 18px;
+    display: inline-block;
+    background-color: darkgrey;
+}
+
+.four_div2 {
+    width: 33.33%;
+    margin: auto;
+    padding: 0px 15px;
+    float: left;
+}
+
+.four_div3 {
+    width: 33.33%;
+    margin: auto;
+    padding: 0px 15px;
+    float: left;
+}
+
+.five_div{
+    width: 90%;
+    margin: 30px auto;
+    overflow: auto;
+}
+
+.five_div_tit{
+    width: 100%;
+    margin: 15px auto;
+}
+
+.five_txt1{
+    text-align: left;
+    font-size: 30px;
+    padding: 0px 20px;
+}
+
+.five_div1{
+    width: 33.33%;
+    margin: auto;
+    padding: 0px 15px;
+    float: left;
+}
+
+.five_h3,
+.five_img {
+    background-color: brown;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    margin: 0px;
+}
+
+.five_img{
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    display: block;
+}
+
+.five_txt{
+    width: 100%;
+    padding: 10px;
+    color: black;
+    font-size: 18px;
+    display: inline-block;
+    text-align: left;
+    background-color: darkgrey;
+}
+
+.five_div2{
+    width: 33.33%;
+    margin: auto;
+    padding: 0px 15px;
+    float: left;
+}
+
+.five_div3{
+    width: 33.33%;
+    margin: auto;
+    padding: 0px 15px;
+    float: left;
+}
+
+.six_div {
+    width: 100%;
+    margin: auto;
+    background-color: gray;
+}
+
+.six_div_01 {
+    width: 90%;
+    margin: auto;
+    overflow: auto;
+}
+
+.six_div1 {
+    width: 50%;
+    margin: auto;
+    float: left;
+}
+
+.six_txt {
+    padding: 20px;
+    font-size: 18px;
+    margin: 0px;
+}
+
+.six_div2 {
+    width: 50%;
+    margin: auto;
+    float: left;
+    text-align: right;
+}
+
+.icon1 {
+    width: 10%;
+    margin-right: 15px;
+    padding: 15px;
+}
+
+/* GALLRY PAGE OF CSS*/
+.gall_first_div {
+    width: 100%;
+    height: 100px;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+.fir_div {
+    width: 90%;
+    margin: 120px auto 0px auto;
+    font-size: 24px;
+    position: relative;
+    text-align: left;
+    color: brown;
+}
+
+.gallary_img {
+    width: 90%;
+    margin: 100px auto;
+    overflow: auto;
+    position: relative;
+}
+
+.gall_imgs {
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+    float: left;
+    max-width: 300px;
+}
+
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/* ABOUT PAGE OF CSS*/
+.blank{
+    width: 100%;
+    height: 100px;
+    margin: auto;
+}
+.about_first_div {
+    width: 100%;
+    height: 70px;
+    margin: 10px auto;   
+}
+
+.about_fir_div {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    padding: 30px 0px;
+    font-size: 30px;
+    font-weight: 600;
+    color: brown;
+    position: relative;
+}
+
+.about_sec_div {
+    width: 100%;
+    margin: auto;
+}
+
+.about_second_div {
+    width: 90%;
+    margin:auto;;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: brown;
+    position: relative;
+}
+
+.about_p1 {
+    width: 90%;
+    margin: auto;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.about_txt1 {
+    width: 90%;
+    margin: auto;
+    color: brown;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.about_image {
+    width: 90%;
+    margin: auto;
+}
+
+.abou_img {
+    width: 100%;
+    margin: auto;
+}
+
+/* CONTACT PAGE OF CSS*/
+.first_div_contact {
+    width: 100%;
+    margin: auto;
+    font-size: 24px;
+    background-color: gray;
+    padding: 15px;
+}
+
+.fir_div_contact {
+    width: 15%;
+    margin: auto;
+    text-align: center;
+}
+
+.contact {
+    width: 90%;
+    margin: auto;
+    overflow: auto;
+}
+
+.contact_message {
+    width: 50%;
+    margin: auto;
+    float: left;
+}
+
+.contact_mess_txt {
+    font-size: 20px;
+    margin: 0px;
+    padding: 15px;
+}
+
+.contact_info {
+    width: 50%;
+    margin: auto;
+    float: left;
+}
+
+.cont_info_txt {
+    font-size: 20px;
+    margin: 0px;
+    padding: 15px;
+}
+
+.txt_span {
+    font-size: 10px;
+}
+
+.form_1 {
+    width: 100%;
+    overflow: auto;
+    padding: 10px;
+}
+
+.div1 {
+    width: 50%;
+    margin: auto;
+    float: left;
+}
+
+.div2 {
+    width: 50%;
+    margin: auto;
+    float: left;
+}
+
+.btn_mess {
+    width: 75%;
+    background-color: gray;
+    padding: 5px;
+}
+
+.btn_msg {
+    width: 60%;
+    margin: auto;
+    color: white;
+}
+
+.div_icons {
+    width: 100%;
+    margin: auto;
+}
+
+.fir_iconhome {
+    width: 100%;
+    padding: 10px;
+    overflow: auto;
+}
+
+.div_icon {
+    width: 8%;
+    padding: 10px;
+    margin: auto;
+    float: left;
+    background-color: gray;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.div_details {
+    width: 100%;
+}
+
+.det_h2 {
+    font-size: 22px;
+    margin: 0px;
+}
+
+.de_h4 {
+    font-size: 14px;
+    margin: 0px;
+}
+
+/* FACULTY PAGE OF CSS*/
