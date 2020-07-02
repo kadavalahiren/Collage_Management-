@@ -858,3 +858,29 @@ body {
 }
 
 /* FACULTY PAGE OF CSS*/
+.first_txt_Fac{
+    width: 100%;
+    margin: auto;
+}
+.text_fac{
+    width: 90%;
+    margin: auto;
+    font-size: 25px;
+    padding: 20px 10px;
+}
+.first_pro{
+    width: 25%;
+    
+    margin: auto;
+    padding: 20px;
+    background-color:indianred;
+}
+.pro_img{
+    width: 70%;
+    margin: auto;
+}
+.pro1{
+    width: 100%;
+    height: 200px;
+    margin: auto;
+}
