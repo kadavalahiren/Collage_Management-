@@ -1,106 +1,203 @@
 /* css reset - makes the layout looking good in all browsers */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline; }
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-	display: block; }
-body {
-	line-height: 1; 
-	font:12px/20px Arial;
-	background:#e0f3ff url(bg.png) repeat scroll 0 0;
-	}
-ol, ul {
-	list-style: none; }
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
 
-/* Main Styles */	
-	
-#wrapper{
-	width: 90%;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font: 12px/20px Arial;
+    background: #e0f3ff url(bg.png) repeat scroll 0 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+/* Main Styles */
+
+#wrapper {
+    width: 90%;
     height: 100px;
-	margin: 0px 80px;
+    margin: 0px 80px;
     position: fixed;
 }
 
 #nav {
-	width: 70%;
-	margin:auto;
+    width: 70%;
+    margin: auto;
     float: left;
-    position:relative;
+    position: relative;
     padding: 20px 0px;
 }
 
 ul#navigation {
-	margin:0px auto;
-	position:relative;
-	float:left;
-	border-left:1px solid #c4dbe7;
-	border-right:1px solid #c4dbe7;
+    margin: 0px auto;
+    position: relative;
+    float: left;
+    border-left: 1px solid #c4dbe7;
+    border-right: 1px solid #c4dbe7;
 }
 
 ul#navigation li {
-	display:inline;
-	font-size:12px;
-	font-weight:bold;
-	margin:0;
-	padding:0;
-	float:left;
-	position:relative;
-	border-top:1px solid #c4dbe7;
-	border-bottom:2px solid #c4dbe7;
+    display: inline;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    float: left;
+    position: relative;
+    border-top: 1px solid #c4dbe7;
+    border-bottom: 2px solid #c4dbe7;
 }
 
 ul#navigation li a {
-	padding:10px 25px;
-	color:#616161;
-	text-shadow:1px 1px 0px #fff;
-	text-decoration:none;
-	display:inline-block;
-	border-right:1px solid #fff;
-	border-left:1px solid #C2C2C2;
-	border-top:1px solid #fff;
-	background: #f5f5f5;
-	
-	-webkit-transition:color 0.2s linear, background 0.2s linear;	
-	-moz-transition:color 0.2s linear, background 0.2s linear;	
-	-o-transition:color 0.2s linear, background 0.2s linear;	
-	transition:color 0.2s linear, background 0.2s linear;	
+    padding: 10px 25px;
+    color: #616161;
+    text-shadow: 1px 1px 0px #fff;
+    text-decoration: none;
+    display: inline-block;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #C2C2C2;
+    border-top: 1px solid #fff;
+    background: #f5f5f5;
+
+    -webkit-transition: color 0.2s linear, background 0.2s linear;
+    -moz-transition: color 0.2s linear, background 0.2s linear;
+    -o-transition: color 0.2s linear, background 0.2s linear;
+    transition: color 0.2s linear, background 0.2s linear;
 }
 
 ul#navigation li a:hover {
-	background:#f8f8f8;
-	color:#282828;
+    background: #f8f8f8;
+    color: #282828;
 }
 
 ul#navigation li:hover > a {
-	background:#fff;
+    background: #fff;
 }
 
 /* Drop-Down Navigation */
-ul#navigation li:hover > ul
-{
-	visibility:visible;
-	opacity:1;
+ul#navigation li:hover > ul {
+    visibility: visible;
+    opacity: 1;
 }
 
-ul#navigation ul, ul#navigation ul li ul {
-	list-style: none;
+ul#navigation ul,
+ul#navigation ul li ul {
+    list-style: none;
     margin: 0;
-    padding: 0;    
-	visibility:hidden;
+    padding: 0;
+    visibility: hidden;
     position: absolute;
     z-index: 99999;
-	width:180px;
-	background:#f8f8f8;
-	box-shadow:1px 1px 3px #ccc;
-	opacity:0;
-	-webkit-transition:opacity 0.2s linear, visibility 0.2s linear; 
-	-moz-transition:opacity 0.2s linear, visibility 0.2s linear; 
-	-o-transition:opacity 0.2s linear, visibility 0.2s linear; 
-	transition:opacity 0.2s linear, visibility 0.2s linear; 	
+    width: 180px;
+    background: #f8f8f8;
+    box-shadow: 1px 1px 3px #ccc;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s linear, visibility 0.2s linear;
+    -moz-transition: opacity 0.2s linear, visibility 0.2s linear;
+    -o-transition: opacity 0.2s linear, visibility 0.2s linear;
+    transition: opacity 0.2s linear, visibility 0.2s linear;
 }
 
 ul#navigation ul {
@@ -114,32 +211,33 @@ ul#navigation ul li ul {
 }
 
 ul#navigation ul li {
-	clear:both;
-	width:100%;
-	border:0 none;
-	border-bottom:1px solid #c9c9c9;
+    clear: both;
+    width: 100%;
+    border: 0 none;
+    border-bottom: 1px solid #c9c9c9;
 }
 
 ul#navigation ul li a {
-	background:none;
-	padding:7px 15px;
-	color:#616161;
-	text-shadow:1px 1px 0px #fff;
-	text-decoration:none;
-	display:inline-block;
-	border:0 none;
-	float:left;
-	clear:both;
-	width:150px;
+    background: none;
+    padding: 7px 15px;
+    color: #616161;
+    text-shadow: 1px 1px 0px #fff;
+    text-decoration: none;
+    display: inline-block;
+    border: 0 none;
+    float: left;
+    clear: both;
+    width: 150px;
 }
 
 ul#navigation li a.first {
-	border-left: 0 none;
+    border-left: 0 none;
 }
 
 ul#navigation li a.last {
-	border-right: 0 none;
+    border-right: 0 none;
 }
+
 /* login form PAGE OF CSS*/
 .log_first_div {
     width: 100%;
@@ -464,24 +562,24 @@ body {
     float: left;
 }
 
-.five_div{
+.five_div {
     width: 90%;
     margin: 30px auto;
     overflow: auto;
 }
 
-.five_div_tit{
+.five_div_tit {
     width: 100%;
     margin: 15px auto;
 }
 
-.five_txt1{
+.five_txt1 {
     text-align: left;
     font-size: 30px;
     padding: 0px 20px;
 }
 
-.five_div1{
+.five_div1 {
     width: 33.33%;
     margin: auto;
     padding: 0px 15px;
@@ -497,14 +595,14 @@ body {
     margin: 0px;
 }
 
-.five_img{
+.five_img {
     width: 100%;
     height: 200px;
     margin: auto;
     display: block;
 }
 
-.five_txt{
+.five_txt {
     width: 100%;
     padding: 10px;
     color: black;
@@ -514,14 +612,14 @@ body {
     background-color: darkgrey;
 }
 
-.five_div2{
+.five_div2 {
     width: 33.33%;
     margin: auto;
     padding: 0px 15px;
     float: left;
 }
 
-.five_div3{
+.five_div3 {
     width: 33.33%;
     margin: auto;
     padding: 0px 15px;
@@ -558,11 +656,11 @@ body {
     float: left;
     text-align: right;
 }
-
 .icon1 {
     width: 10%;
     margin-right: 15px;
     padding: 15px;
+    border-radius: 50%;
 }
 
 /* GALLRY PAGE OF CSS*/
@@ -580,6 +678,7 @@ body {
     position: relative;
     text-align: left;
     color: brown;
+    font-weight: 600;
 }
 
 .gallary_img {
@@ -600,94 +699,112 @@ body {
 
 /* Style the Image Used to Trigger the Modal */
 #myImg {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-#myImg:hover {opacity: 0.7;}
+#myImg:hover {
+    opacity: 0.7;
+}
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
 }
 
 /* Modal Content (Image) */
 .modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
 }
 
 
-.modal-content, #caption {
-  animation-name: zoom;
-  animation-duration: 0.6s;
+.modal-content,
+#caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
 }
 
 @keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
 }
 
 /* The Close Button */
 .close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .close:hover,
 .close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
 }
 
 /* ABOUT PAGE OF CSS*/
-.blank{
+.blank {
     width: 100%;
     height: 100px;
     margin: auto;
 }
+
 .about_first_div {
     width: 100%;
     height: 70px;
-    margin: 10px auto;   
+    margin: 10px auto;
 }
 
 .about_fir_div {
@@ -708,7 +825,8 @@ body {
 
 .about_second_div {
     width: 90%;
-    margin:auto;;
+    margin: auto;
+    ;
     padding: 10px;
     font-size: 20px;
     font-weight: 600;
@@ -858,29 +976,125 @@ body {
 }
 
 /* FACULTY PAGE OF CSS*/
-.first_txt_Fac{
+.first_txt_Fac {
     width: 100%;
     margin: auto;
 }
-.text_fac{
+
+.text_fac {
     width: 90%;
     margin: auto;
     font-size: 25px;
     padding: 20px 10px;
 }
-.first_pro{
+
+.first_pro {
     width: 25%;
-    
     margin: auto;
     padding: 20px;
-    background-color:indianred;
 }
-.pro_img{
-    width: 70%;
+
+.pro_img {
+    width: 60%;
     margin: auto;
 }
-.pro1{
+
+.pro1 {
     width: 100%;
     height: 200px;
+    margin: auto;
+}
+.hide{
+    margin: -100px auto auto 80px;
+    display: none;
+}     
+.pro1:hover + .hide{
+    position: absolute;
+    display: block;
+}
+.img_hower{
+   margin: auto;
+}
+.pro_tex {
+    width: 100%;
+    margin: auto;
+}
+
+.txt_nam {
+    width: 60%;
+    margin: auto;
+    font-size: 15px;
+    padding-top: 5px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.txt_tit {
+    width: 50%;
+    margin: auto;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    color: orangered;
+}
+
+.sec_prof {
+    width: 100%;
+    overflow: auto;
+    margin: auto;
+    
+}
+
+.second_prof {
+    width: 25%;
+    margin: auto;
+    padding: 20px;
+    float: left;
+}
+
+.sec_pro_img {
+    width: 60%;
+    margin: auto;
+}
+
+.sec_pro1 {
+    width: 100%;
+    height: 200px;
+    margin: auto;
+}
+
+.sec_pro_tex {
+    width: 100%;
+    margin: auto;
+}
+
+.sec_txt_nam {
+    width: 60%;
+    margin: auto;
+    font-size: 15px;
+    padding-top: 5px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.sec_txt_tit {
+    width: 50%;
+    margin: auto;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    color: orangered;
+}
+.email_link{
+    width: 100%;
+    margin: auto;
+}
+.link{
+    width: 10%;
+    margin: auto;
+    display:block;
+}
+.email{
+    text-align: center;
     margin: auto;
 }
